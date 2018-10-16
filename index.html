@@ -1,48 +1,75 @@
 <!DOCTYPE html>
 <html>
-
+        <!-- //  STILL WORK IN PROGRESS - SEE COMMENTS in JS FILE FOR AREAS THAT STILL NEED TO BE COMPLETED!!!!!!!!!!!!! -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Star Wars - RPG Game</title>
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added Bootstrap Link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Added Link to CSS Stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
+    <!-- Added Link to Javascript File-->
     <script type="text/javascript" src="assets/javascript/game.js"></script>
     <!-- Creates the Overall Grid -->
-    <div class="container">
 
-        <div class="row1">
-            <!-- First and only column -->
+       <div class="container">
+        <!--First row and only column -->
+        <div class="row">
             <div class="col-md-12">
-                <img src="assets/images/ship.jpg" alt="Star Wars Ship" class="img-fluid" alt="Responsive image">
-
+                <div id="RPG">
+                    <h1>Star Wars RPG!</h1>
+                </div>
             </div>
         </div>
 
         <div class="row">
+            <!--Second row and 4 columns -->
+            <div class="Characters">
 
-            <!--First and only column -->
-            <div class="col-md-12">
-                <div id="Game">
-                    <h1>Star Wars RPG</h1>
-                </div>
+                <button type="button" class="btn btn-characterOBK"><img src="assets/images/Obi Wan Kenobi.png" height="90"
+                        width="100">
+                </button>
+            </div>
+            <div class="Characters">
+                <button type="button" class="btn btn-characterLS"><img src="assets/images/Luke Skywalker.png" height="90"
+                        width="100" /></button>
+            </div>
+            <div class="Characters">
+                <button type="button" class="btn btn-characterDS"><img src="assets/images/Darth Sidious.png" height="90"
+                        width="100" /></button>
+            </div>
+            <div class="Characters">
+                <button type="button" class="btn btn-characterDM"><img src="assets/images/Darth Maul.png" height="90"
+                        width="100" /></button>
             </div>
         </div>
 
-        <div class="row2">
+        <div class="row">
             <!-- First and only column -->
             <div class="col-md-12">
-                <div id="GuessPlease">
+                <div id="YourCharacter">
                     <h4>Your Character</h4>
                 </div>
             </div>
         </div>
-
+        <div class="row">
+                <!-- First and only column -->
+                <div class="col-md-12">
+                    <div id="YourCharacter">
+                        
+                    </div>
+                </div>
+            </div>
+            
+        
 
         <div class="row3">
             <!--First and only column -->
@@ -51,10 +78,19 @@
                     <p>
                         <h4>Enemies Available to Attack</h4>
                     </p>
+                    </div>
+                    <div class="row">
+                            <!-- First and only column -->
+                            <div class="col-md-12">
+                                <div id="Enemies">
+                                    
+                                </div>
+                            </div>
+                        </div>
                     <p>
                         <h4>Fight Section</h4>
                     </p>
-                    <p><button type="button" class="btn btn-primary btn-lg">
+                    <p><button type="button" class="btn btn-primary attack">
                             <h4>Attack</h4>
                         </button></p>
 
@@ -64,7 +100,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    
 
 </body>
 
