@@ -1,107 +1,139 @@
 <!DOCTYPE html>
-<html>
-        <!-- //  STILL WORK IN PROGRESS - SEE COMMENTS in JS FILE FOR AREAS THAT STILL NEED TO BE COMPLETED!!!!!!!!!!!!! -->
+<html lang="en-us">
+
 <head>
-    <meta charset="utf-8">
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Star Wars - RPG Game</title>
-    <!-- Added link to the jQuery Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Added Bootstrap Link -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <!-- Added Link to CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Star Wars RPG-Game</title>
+    <!-- Bootstrap links -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
 
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!--Link to CSS file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- jQuery Link -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Link to Javascript File -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
 
 <body>
-    <!-- Added Link to Javascript File-->
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
     <!-- Creates the Overall Grid -->
+    <div class="container">
 
-       <div class="container">
-        <!--First row and only column -->
         <div class="row">
+            <!-- First row with 1 column -->
             <div class="col-md-12">
-                <div id="RPG">
-                    <h1>Star Wars RPG!</h1>
-                </div>
+                <div class="main-section-title">Star Wars RPG!</div>
             </div>
-        </div>
 
-        <div class="row">
-            <!--Second row and 4 columns -->
-            <div class="Characters">
-
-                <button type="button" class="btn btn-characterOBK"><img src="assets/images/Obi Wan Kenobi.png" height="90"
-                        width="100">
-                </button>
-            </div>
-            <div class="Characters">
-                <button type="button" class="btn btn-characterLS"><img src="assets/images/Luke Skywalker.png" height="90"
-                        width="100" /></button>
-            </div>
-            <div class="Characters">
-                <button type="button" class="btn btn-characterDS"><img src="assets/images/Darth Sidious.png" height="90"
-                        width="100" /></button>
-            </div>
-            <div class="Characters">
-                <button type="button" class="btn btn-characterDM"><img src="assets/images/Darth Maul.png" height="90"
-                        width="100" /></button>
-            </div>
-        </div>
-
-        <div class="row">
-            <!-- First and only column -->
-            <div class="col-md-12">
-                <div id="YourCharacter">
-                    <h4>Your Character</h4>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-                <!-- First and only column -->
+            <div class="row">
+                <!-- Second row with 1 column -->
                 <div class="col-md-12">
-                    <div id="YourCharacter">
-                        
+
+                    <div id="main-game-section">
+                        <br>
+                        <!-- Div that will display all available characters for this game -->
+                        <div id="selectACharacter">
+
+                            <div class="section-title">Select Your Character</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-        
 
-        <div class="row3">
-            <!--First and only column -->
-            <div class="col-md-12">
-                <div id="GuessPlease">
-                    <p>
-                        <h4>Enemies Available to Attack</h4>
-                    </p>
+                <div class="row">
+                    <!-- Third row with 1 column -->
+                    <div class="col-md-12">
+
+                        <!-- Div to display the character's the player selected -->
+                        <div id="selected-character-section">
+                            <div class="section-title">Your Character</div>
+                            <!-- Div to display the player's selected character for one game. -->
+                            <div id="yourCharacter"></div>
+                        </div>
                     </div>
-                    <div class="row">
-                            <!-- First and only column -->
-                            <div class="col-md-12">
-                                <div id="Enemies">
-                                    
-                                </div>
+                </div>
+
+                <br>
+                <div class="row">
+                    <!-- Fourth row with 1 column -->
+                    <div class="col-md-12">
+                        <!-- Div to display the characters that will serve as the enemies/opponents -->
+                        <div id="enemiesAvailableToAttack">
+                            <div class="section-title">Enemies Available To Attack</div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <!-- Fifth row with 1 column -->
+                    <div class="col-md-12">
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Fifth row with 1 column -->
+                    <div class="col-md-12">
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Fifth row with 1 column -->
+                    <div class="col-md-12">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <!-- Fifth row with 1 column -->
+                    <div class="col-md-12">
+                        <div class="section-title">Fight Section</div>
+                        <br>
+                        <div id="attack">
+                            <button class="attackButton" id="attack-button">Attack</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <!-- Sixth row with 1 column -->
+                    <div class="col-md-12">
+                        <div id="action">
+                            <div class="character-section">
+                                <div class="section-title">Defender</div>
+                                <!-- Div to display the selected enemy/opponent for a particular round-->
+                                <div id="defender"></div>
                             </div>
                         </div>
-                    <p>
-                        <h4>Fight Section</h4>
-                    </p>
-                    <p><button type="button" class="btn btn-primary attack">
-                            <h4>Attack</h4>
-                        </button></p>
+                    </div>
+                </div>
 
-                    <p>
-                        <h4>Defender</h4>
-                    </p>
+
+            </div>
+            <div class="row">
+                <!-- Seventh row with 1 column -->
+                <div class="col-md-12">
+                    <!-- Div to display the game status messages and the "Restart" button to play another game once all rounds have been completed for 1 game-->
+                    <div id="gameStatusMessage"></div>
                 </div>
             </div>
-        </div>
-    
 
+        </div>
+    </div>
 </body>
 
 </html>
