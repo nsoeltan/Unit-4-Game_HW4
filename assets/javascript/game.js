@@ -31,7 +31,7 @@ $(document).ready(function () {
       name: "Darth Maul",
       health: 180,
       attack: 7,
-      imageUrl: "assets/images/Darth Maul.png",
+      imageUrl: "assets/images/Darth Maul.PNG",
       enemyAttackBack: 25
     }
   };
