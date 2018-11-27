@@ -68,7 +68,7 @@ $(document).ready(function () {
     // Creating a variable for a div for the character's/player's name
     var charName = $("<div class='character-name'>").text(character.name);
     // Creating a variable for the character's/ player's image
-    var charImage = $("<img alt='image' height= '55' width='55' class='character-image'>").attr("src", character.imageUrl);
+    var charImage = $("<img alt='image' height= '50' width='50' class='character-image'>").attr("src", character.imageUrl);
     // Creating a div for the character's/player's health points
     var charHealth = $("<div class='character-health'>").text(character.health);
 
